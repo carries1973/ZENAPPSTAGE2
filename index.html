@@ -3,66 +3,65 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ZEN Residential — Leasing &amp; Revenue Division Application</title>
+<title>ZEN Residential — Join the Leasing &amp; Revenue Division</title>
 <style>
-:root{--teal-dark:#00344A;--teal-navy:#012533;--cyan:#00A0C0;--gold:#F7B512;--body:#333;--bg:#F0F0F0;--cream:#FAF9F5;--muted:#868686;--border:#E0DDD8;--ok:#1A7F3C;--red:#C0392B}
+:root{--teal-dark:#00344A;--teal-navy:#012533;--cyan:#00A0C0;--gold:#F7B512;--body:#333;--bg:#F0F0F0;--cream:#FAF9F5;--muted:#767676;--border:#E0DDD8;--ok:#1A7F3C;--red:#C0392B}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--body);font-family:Calibri,Carlito,"Segoe UI",sans-serif;font-size:16px;line-height:1.5}
-header{background:var(--teal-dark);color:#fff;padding:26px 26px 20px}
+header{background:var(--teal-dark);color:#fff;padding:26px 26px 22px}
 .eyebrow{font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--cyan)}
-h1{margin:8px 0 12px;font-size:29px;font-weight:700;line-height:1.15}
-.rule{height:3px;background:var(--gold);max-width:460px;margin-bottom:12px}
-header p{margin:0;color:#c8c4bf;font-size:15px;max-width:72ch}
+h1{margin:8px 0 12px;font-size:30px;font-weight:700;line-height:1.12}
+.rule{height:3px;background:var(--gold);max-width:420px;margin-bottom:12px}
+header p{margin:0;color:#cfcbc6;font-size:15.5px;max-width:66ch}
 #prog{position:sticky;top:0;z-index:20;height:6px;background:var(--teal-navy)}
 #bar{height:100%;width:0;background:var(--cyan);transition:width .3s}
-.wrap{max-width:840px;margin:0 auto;padding:0 0 60px}
-section{background:#fff;margin:20px 0;border:1px solid var(--border)}
-.sh{background:var(--teal-dark);color:#fff;padding:12px 18px;font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+.wrap{max-width:800px;margin:0 auto;padding:0 0 60px}
+section{background:#fff;margin:18px 0;border:1px solid var(--border)}
+.sh{background:var(--teal-dark);color:#fff;padding:11px 18px;font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
 .sh em{color:var(--gold);font-style:normal;letter-spacing:.03em;text-transform:none;font-weight:400}
 .sh.newbie{background:var(--gold);color:var(--teal-dark)}
 .sb{padding:18px}
-.intro{background:var(--cream);border-left:3px solid var(--gold);padding:14px 16px;margin-bottom:18px;font-size:15px}
-.tip{background:var(--cream);border-left:3px solid var(--cyan);padding:12px 15px;margin:14px 0;font-size:14.5px}
-.q{padding:16px 0;border-top:1px solid var(--border)}
+.intro{background:var(--cream);border-left:3px solid var(--gold);padding:13px 15px;margin-bottom:16px;font-size:15px}
+.q{padding:15px 0;border-top:1px solid var(--border)}
 .q:first-child{border-top:none;padding-top:2px}
-label.qt{display:block;font-size:16px;font-weight:700;color:var(--teal-dark);margin-bottom:5px}
+label.qt{display:block;font-size:16.5px;font-weight:700;color:var(--teal-dark);margin-bottom:4px}
 .hint{font-size:14px;color:var(--muted);margin:0 0 8px}
 .req{color:var(--red);font-weight:700}
 input[type=text],input[type=email],input[type=tel],select,textarea{width:100%;padding:10px 11px;border:1px solid var(--border);font:inherit;font-size:15px;background:#fff;color:var(--body);border-radius:2px}
 input:focus,select:focus,textarea:focus{outline:2px solid var(--cyan);outline-offset:-1px}
-textarea{min-height:88px;resize:vertical}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
-.checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:9px;margin-top:4px}
-.chk{display:flex;gap:9px;align-items:flex-start;background:var(--cream);border:1px solid var(--border);padding:10px 12px;cursor:pointer}
+textarea{min-height:74px;resize:vertical}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:13px}
+.checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;margin-top:4px}
+.chk{display:flex;gap:9px;align-items:flex-start;background:var(--cream);border:1px solid var(--border);padding:9px 11px;cursor:pointer}
 .chk:hover{border-color:var(--cyan)}
 .chk input{width:17px;height:17px;flex:none;margin-top:2px}
-.chk span{font-size:15px}
-footer{background:var(--teal-navy);color:#c8c4bf;padding:22px 26px;font-size:13px}
-.btnrow{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+.chk span{font-size:14.5px}
+footer{background:var(--teal-navy);color:#cfcbc6;padding:20px 26px;font-size:13px}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
 button{font:inherit;font-size:15px;font-weight:700;padding:12px 20px;border:none;cursor:pointer;background:var(--cyan);color:#fff;border-radius:2px}
 button.alt{background:var(--gold);color:var(--teal-dark)}
 button.ghost{background:var(--teal-dark);color:#fff}
-#out{width:100%;min-height:200px;font-family:ui-monospace,monospace;font-size:12px;margin-top:12px}
+#out{width:100%;min-height:170px;font-family:ui-monospace,monospace;font-size:12px;margin-top:12px}
+#out[readonly]{background:var(--cream);color:var(--body);cursor:default}
 .err{background:#fdecea;border-left:3px solid var(--red);padding:12px 14px;margin-top:14px;font-weight:700;color:var(--red);font-size:15px}
 .done{background:#eaf6ee;border-left:3px solid var(--ok);padding:12px 14px;margin-top:14px;font-weight:700;color:var(--ok);font-size:15px}
 .legal{font-size:13px;color:var(--muted);line-height:1.5}
 .legal b{color:var(--teal-dark)}
 .hide{display:none!important}
-.pick{background:var(--cream);border:2px solid var(--cyan);padding:16px;margin-bottom:4px}
-.gate{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:6px}
-.gate button{padding:26px 20px;font-size:19px;line-height:1.3;text-align:left;height:100%;border:2px solid transparent}
-.gate button small{display:block;font-size:14px;font-weight:400;margin-top:7px;opacity:.9}
+.pick{background:var(--cream);border:2px solid var(--cyan);padding:15px;margin-bottom:2px}
+.gate{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
+.gate button{padding:24px 20px;font-size:19px;line-height:1.25;text-align:left;height:100%}
+.gate button small{display:block;font-size:14px;font-weight:400;margin-top:6px;opacity:.92}
 .gate button.b1{background:var(--gold);color:var(--teal-dark)}
 .gate button.b2{background:var(--teal-dark);color:#fff}
 .gate button.on{outline:4px solid var(--cyan);outline-offset:2px}
-.reset{background:none;color:var(--cyan);text-decoration:underline;padding:0;font-size:14px;font-weight:400}
-.perks{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:12px}
-.perk{background:var(--cream);border-left:3px solid var(--gold);padding:12px 14px;font-size:14.5px;line-height:1.45}
-.perk b{display:block;color:var(--teal-dark);font-size:15.5px;margin-bottom:3px}
-details summary{cursor:pointer;font-weight:700;color:var(--teal-dark);font-size:15px;padding:4px 0}
+.perks{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:11px}
+.perk{background:var(--cream);border-left:3px solid var(--gold);padding:11px 13px;font-size:14.5px;line-height:1.4}
+.perk b{display:block;color:var(--teal-dark);font-size:15.5px;margin-bottom:2px}
+details summary{cursor:pointer;font-weight:700;color:var(--teal-dark);font-size:14.5px;padding:4px 0}
 details summary:hover{color:var(--cyan)}
-@media(max-width:600px){.gate{grid-template-columns:1fr}}
-@media(max-width:600px){h1{font-size:24px}.sb{padding:14px}body{font-size:15px}}
+.reset{background:none;color:var(--cyan);text-decoration:underline;padding:0;font-size:14px;font-weight:400}
+@media(max-width:600px){.gate{grid-template-columns:1fr}h1{font-size:25px}.sb{padding:14px}body{font-size:15px}}
 </style>
 </head>
 <body>
@@ -72,8 +71,7 @@ details summary:hover{color:var(--cyan)}
   <div class="eyebrow">ZEN Residential — Leasing &amp; Revenue Division</div>
   <h1>Come win here.</h1>
   <div class="rule"></div>
-  <p><b>We publish everyone's numbers every week.</b> Commission per signed lease is uncapped, the buildings change constantly, and our team leads get found inside the division rather than hired from outside. If that sounds like your kind of place, you are in the right form.</p>
-  <p style="margin-top:10px">Pick your role and the form builds itself around you. Short answers win — two or three sentences beats a paragraph every time.</p>
+  <p><b>Eight questions. About ten minutes.</b> We are not going to make you write an essay to prove you can sell.</p>
 </header>
 
 <div class="wrap">
@@ -81,238 +79,156 @@ details summary:hover{color:var(--cyan)}
 <section id="gate">
   <div class="sh">Start here</div>
   <div class="sb">
-    <p style="margin:0 0 4px;font-size:16px">Two paths. Neither one is the better one — pick whichever is true for you.</p>
+    <p style="margin:0 0 4px;font-size:16px">Two paths. Neither is the better one — pick whichever is true for you.</p>
     <div class="gate">
-      <button type="button" class="b1" id="gb_new" onclick="pick('new')">I'm new to leasing<small>I haven't leased or sold before — or not much. Show me what this is.</small></button>
-      <button type="button" class="b2" id="gb_exp" onclick="pick('exp')">I already lease or sell<small>I've done leasing, property management, or another sales role.</small></button>
+      <button type="button" class="b1" id="gb_new" onclick="pick('new')">I'm new to leasing<small>Haven't leased or sold before — or not much.</small></button>
+      <button type="button" class="b2" id="gb_exp" onclick="pick('exp')">I already lease or sell<small>Leasing, property management, or another sales role.</small></button>
     </div>
   </div>
 </section>
 
 <div id="rest" class="hide">
-<div id="restored" class="hide"></div>
+
 <section>
   <div class="sh">What you are walking into</div>
   <div class="sb">
     <div class="perks">
-      <div class="perk"><b>Uncapped commission</b>Paid per signed lease. Sign more, earn more. There is no ceiling and we do not move the goalposts mid-year.</div>
-      <div class="perk"><b>A live leaderboard</b>Published weekly, everyone's numbers on it. If you like being measured, you will love it here.</div>
-      <div class="perk"><b>Never the same week twice</b>New buildings, new suites, new people. This is not a desk you sit at.</div>
-      <div class="perk"><b>Leads get promoted, not hired</b>We find our team leads inside the division. Every person who answers this form gets looked at that way.</div>
-      <div class="perk"><b>No leasing experience? Good.</b>Some of our strongest people came from retail, hospitality, trades, call centres and salons. We teach leasing. We cannot teach drive.</div>
-      <div class="perk"><b>We actually read these</b>Every single one, by the VP whose team you would be joining.</div>
+      <div class="perk"><b>Commission per signed lease</b>Sign more, earn more.</div>
+      <div class="perk"><b>A live leaderboard</b>Published weekly, everyone's numbers on it.</div>
+      <div class="perk"><b>Never the same week twice</b>New buildings, new suites, new people.</div>
+      <div class="perk"><b>Leads get promoted, not hired</b>We find our team leads inside the division.</div>
     </div>
-    <div class="intro" style="margin:16px 0 0"><b>One sitting.</b> Nothing saves until you hit Finish at the bottom. Nothing is timed — take the run at it when you have a clear half hour.</div>
-    <details style="margin-top:14px">
-      <summary>How we handle your information <span style="font-weight:400;color:var(--muted)">— Alberta PIPA collection notice, tap to read</span></summary>
-      <p class="legal" style="margin-top:10px">ZEN Residential Management Group Ltd. collects the personal information on this form solely to assess your application for employment. It is shared only with our HR team and the VP, Leasing &amp; Revenue. We do not collect information about age, family or marital status, place of origin, ancestry, citizenship, religion, disability, gender or sexual orientation, and you should not include any of it here — if you do, it will not be considered. Retained 12 months, then destroyed (Alberta PIPA s.35). <b>Questions about this collection, or about where your information is stored and by which service providers, go to Carrie Smith, VP Leasing &amp; Revenue — Carries@zenresidential.ca</b>, who will also give you our written policies and practices on service providers outside Canada on request. Same address for access or correction requests.</p>
+    <div class="intro" style="margin:15px 0 0"><b>About ten minutes.</b> Nothing is timed, and your answers are kept in this browser as you type — close the tab and come back, they will still be here.</div>
+    <details style="margin-top:12px">
+      <summary>How we handle your information <span style="font-weight:400;color:var(--muted)">— Alberta PIPA notice, tap to read</span></summary>
+      <p class="legal" style="margin-top:9px">ZEN Residential Management Group Ltd. collects the information on this form solely to assess your application for employment. It is seen only by our HR team and the VP, Leasing &amp; Revenue. We do not ask for and do not consider age, family or marital status, place of origin, ancestry, citizenship, religion, disability, gender or sexual orientation — please don't include any of it. Retained 12 months, then destroyed (PIPA s.35). <b>Questions about this collection, about access or correction, or about where your information is stored and by which service providers: Carrie Smith, VP Leasing &amp; Revenue — Carries@zenresidential.ca</b>, who will provide our written policies on service providers outside Canada on request.</p>
     </details>
   </div>
 </section>
 
 <section>
-  <div class="sh">1 · About you</div>
+  <div class="sh">1 · You</div>
   <div class="sb">
     <div class="pick">
-      <label class="qt" for="f_role">Which role are you applying for? <span class="req">*</span></label>
-      <p class="hint">The rest of the form changes to match — pick the closest fit.</p>
+      <label class="qt" for="f_role">Which seat are you after? <span class="req">*</span></label>
       <select id="f_role" data-req onchange="branch()">
         <option value="">Choose one…</option>
-        <option value="agent">Leasing Consultant (roving — apartments across the city)</option>
+        <option value="agent">Leasing Consultant — roving, apartments across the city</option>
         <option value="sfh">Single-Family Leasing — self-employed contractor</option>
-        <option value="online">Online Leasing Coordinator (phone, text, video — office based)</option>
-        <option value="admin">Lease Administrator (documents, data, accuracy)</option>
-        <option value="renewals">Lease Renewal Coordinator (keeping residents)</option>
-        <option value="manager">Team Lead / Manager (leading a leasing team)</option>
+        <option value="online">Online Leasing Coordinator — phone, text, video</option>
+        <option value="admin">Lease Administrator — documents, data, accuracy</option>
+        <option value="renewals">Lease Renewal Coordinator — keeping residents</option>
+        <option value="manager">Team Lead / Manager</option>
       </select>
-      <div id="roleblurb" class="tip hide"></div>
-    </div>
-    <div class="q">
-      <div class="grid">
-        <div><label class="qt" for="f_name">Full name <span class="req">*</span></label><input type="text" id="f_name" data-req></div>
-        <div><label class="qt" for="f_email">Email <span class="req">*</span></label><input type="email" id="f_email" data-req></div>
-        <div><label class="qt" for="f_phone">Phone <span class="req">*</span></label><input type="tel" id="f_phone" data-req></div>
-        <div id="expkind" class="hide"><label class="qt" for="f_kind">Which is closest? <span class="req">*</span></label>
-          <select id="f_kind" onchange="branch()">
-            <option value="">Choose one…</option>
-            <option value="leasing">Leasing or property management</option>
-            <option value="sales">Sales or customer-facing, not leasing</option>
-          </select></div>
-        <div><label class="qt" for="f_source">How did you hear about us?</label><input type="text" id="f_source" placeholder="Indeed, referral, saw a sign…"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="s_new" class="hide">
-  <div class="sh newbie">Brand new to leasing? <em>Perfect. Here is why that is not a problem.</em></div>
-  <div class="sb">
-    <div class="intro"><b>You are not at a disadvantage here.</b> Some of our strongest people came from retail, hospitality, trades, call centres and hair salons. Leasing can be taught in weeks. What cannot be taught is how you handle people, whether you pick things up fast, and whether you keep going when it is quiet. That is all we are asking about below — so answer as yourself, not as who you think a leasing person is.</div>
-    <div class="q">
-      <label class="qt" for="n_why">Why leasing, and why now? <span class="req">*</span></label>
-      <textarea id="n_why" data-req></textarea>
-    </div>
-    <div class="q">
-      <label class="qt" for="n_hard">What do you think would be the <b>hardest</b> part of this job for you? <span class="req">*</span></label>
-      <p class="hint">Everyone finds something hard. Saying so is a strength here, not a risk.</p>
-      <textarea id="n_hard" data-req></textarea>
-    </div>
-    <div class="q">
-      <label class="qt" for="n_taught">Tell us about the hardest thing you have ever taught yourself. How did you do it, and how long did it take? <span class="req">*</span></label>
-      <textarea id="n_taught" data-req></textarea>
-    </div>
-    <div class="q">
-      <label class="qt" for="n_depth">Tell us about a time you were completely out of your depth. What did you do in the first week? <span class="req">*</span></label>
-      <textarea id="n_depth" data-req></textarea>
-    </div>
-    <div class="q">
-      <label class="qt" for="n_worse">What are you worse at than you would like to be — and what are you doing about it? <span class="req">*</span></label>
-      <textarea id="n_worse" data-req></textarea>
-    </div>
-    <div class="q">
-      <label class="qt" for="n_persuade">Tell us about a time you changed someone's mind about something. <span class="req">*</span></label>
-      <p class="hint">Any context — work, family, a friend. We want to see how you persuade. Whether you have sold before is beside the point.</p>
-      <textarea id="n_persuade" data-req></textarea>
-    </div>
-  </div>
-</section>
-
-
-<section>
-  <div class="sh">2 · Reading people <em>the skill that separates good from great in this job</em></div>
-  <div class="sb">
-    <div class="q">
-      <label class="qt" for="e_angry">Tell us about the angriest customer, resident or colleague you have dealt with. What were they <b>actually</b> upset about? <span class="req">*</span></label>
-      <p class="hint">It is almost never the thing they are shouting about. How did you find the real one?</p>
-      <textarea id="e_angry" data-req></textarea>
-    </div>
-    <div class="q">
-      <label class="qt" for="e_reset">Someone is rude to you and you have to be pleasant to the next person fifteen minutes later. How do you reset? <span class="req">*</span></label>
-      <textarea id="e_reset" data-req></textarea>
-    </div>
-    <div class="q">
-      <label class="qt" for="e_read">Tell us about a time you misread someone. What did you miss, and what do you do differently now? <span class="req">*</span></label>
-      <textarea id="e_read" data-req></textarea>
-    </div>
-    <div class="q">
-      <label class="qt" for="e_escal">When something lands on you that you are not sure how to handle — do you own it or pass it up? Where is your line? <span class="req">*</span></label>
-      <textarea id="e_escal" data-req></textarea>
-    </div>
-  </div>
-</section>
-
-
-<section id="s_agent" class="hide">
-  <div class="sh">3 · The leasing work <em>roving consultant</em></div>
-  <div class="sb">
-    <div class="q"><label class="qt" for="a_night">It is <b>8:40 on a Tuesday night.</b> A lead comes in on a suite you have available. What happens next? <span class="req">*</span></label><p class="hint">Be specific about timing.</p><textarea id="a_night" data-req></textarea></div>
-    <div class="q"><label class="qt" for="a_price">Someone tours, loves it, then says: <em>"It's nice, but it's $100 more than the place on 109th."</em> <span class="req">*</span></label><p class="hint">Your actual words — what you would say out loud.</p><textarea id="a_price" data-req></textarea></div>
-    <div class="q"><label class="qt" for="a_quiet">They tour, they love it, then they go quiet. What do you do over the next 48 hours? <span class="req">*</span></label><textarea id="a_quiet" data-req></textarea></div>
-    <div class="q"><label class="qt" for="a_stale">A suite has been listed 60 days with no lease and you are <b>not allowed</b> to drop the rent. What do you change? <span class="req">*</span></label><textarea id="a_stale" data-req></textarea></div>
-    <div class="q"><label class="qt" for="a_math">Our standard is <b>20 signed leases a month.</b> Roughly how many leads and tours do you think that takes? Show your thinking. <span class="req">*</span></label><textarea id="a_math" data-req></textarea></div>
-    <div class="q"><label class="qt" for="a_board">We publish a leaderboard every week with everyone's numbers on it. Where do you expect to be in month three — and how would you feel at the bottom? <span class="req">*</span></label><textarea id="a_board" data-req></textarea></div>
-  </div>
-</section>
-
-<section id="s_sfh" class="hide">
-  <div class="sh">3 · The work <em>single-family, self-employed</em></div>
-  <div class="sb">
-    <div class="tip">Contractor work, paid per door. No base, no set hours, and no cap on how much you take on. It suits someone already self-employed, or running something alongside this.</div>
-    <div class="q"><label class="qt" for="h_self">Are you currently self-employed or running your own business? Tell us what you do. <span class="req">*</span></label><textarea id="h_self" data-req></textarea></div>
-    <div class="q"><label class="qt" for="h_nopay">What is the longest you have gone without a guaranteed pay cheque, and how did you cover your costs? <span class="req">*</span></label><textarea id="h_nopay" data-req></textarea></div>
-    <div class="q"><label class="qt" for="h_night">A lead comes in at <b>8:40 on a Tuesday night</b> on a house you are showing. What happens next? <span class="req">*</span></label><textarea id="h_night" data-req></textarea></div>
-    <div class="q"><label class="qt" for="h_price">A prospect says the rent is $100 more than they wanted to pay. What do you say? <span class="req">*</span></label><textarea id="h_price" data-req></textarea></div>
-    <div class="q"><label class="qt" for="h_volume">How many houses a month could you realistically show and lease alongside your other commitments? <span class="req">*</span></label><textarea id="h_volume" data-req></textarea></div>
-    <div class="q"><label class="qt" for="h_conflict">If you hold a real estate licence or work with a brokerage, tell us about it. <span class="req">*</span></label><p class="hint">Genuinely not a problem — we just need it up front. Write "none" if it does not apply.</p><textarea id="h_conflict" data-req></textarea></div>
-  </div>
-</section>
-
-<section id="s_online" class="hide">
-  <div class="sh">3 · The work <em>online leasing — phone, text, video</em></div>
-  <div class="sb">
-    <div class="q"><label class="qt" for="o_night">A lead comes in at <b>8:40 on a Tuesday night.</b> What happens next, and how fast? <span class="req">*</span></label><textarea id="o_night" data-req></textarea></div>
-    <div class="q"><label class="qt" for="o_write">Write the actual text message you would send to a lead who enquired two hours ago and has not replied. <span class="req">*</span></label><p class="hint">Write the message itself, not a description of it.</p><textarea id="o_write" data-req placeholder="Hi …"></textarea></div>
-    <div class="q"><label class="qt" for="o_video">How do you feel about running video tours where you are on camera? <span class="req">*</span></label><textarea id="o_video" data-req></textarea></div>
-    <div class="q"><label class="qt" for="o_juggle">You have 14 unanswered leads, a video tour in 20 minutes and an application that needs a decision today. Talk us through your next hour. <span class="req">*</span></label><textarea id="o_juggle" data-req></textarea></div>
-    <div class="q"><label class="qt" for="o_phone">Some people love the phone and some avoid it. Which are you, honestly? <span class="req">*</span></label><textarea id="o_phone" data-req></textarea></div>
-    <div class="q"><label class="qt" for="o_ai">We use an AI assistant to handle some first replies. How do you feel about working alongside that? <span class="req">*</span></label><textarea id="o_ai" data-req></textarea></div>
-  </div>
-</section>
-
-<section id="s_admin" class="hide">
-  <div class="sh">3 · The work <em>lease administration</em></div>
-  <div class="sb">
-    <div class="q"><label class="qt" for="d_process">Walk us through how you check your own work before something goes out the door. <span class="req">*</span></label><textarea id="d_process" data-req></textarea></div>
-    <div class="q"><label class="qt" for="d_error">Tell us about an error you made in a document or a system. How was it caught, and what did you change afterwards? <span class="req">*</span></label><p class="hint">"It was never caught" is a real answer too. We care about what you do now.</p><textarea id="d_error" data-req></textarea></div>
-    <div class="q"><label class="qt" for="d_volume">Forty leases need entering by Friday and three have missing information. What do you do first? <span class="req">*</span></label><textarea id="d_volume" data-req></textarea></div>
-    <div class="q"><label class="qt" for="d_chase">You need something from someone who keeps not replying. What do you actually do? <span class="req">*</span></label><textarea id="d_chase" data-req></textarea></div>
-    <div class="q"><label class="qt" for="d_systems">Which systems have you worked in, and which did you pick up fastest? <span class="req">*</span></label><textarea id="d_systems" data-req></textarea></div>
-    <div class="q"><label class="qt" for="d_boring">Parts of this job repeat every single week. What keeps you accurate on the two-hundredth one? <span class="req">*</span></label><textarea id="d_boring" data-req></textarea></div>
-  </div>
-</section>
-
-<section id="s_renewals" class="hide">
-  <div class="sh">3 · The work <em>renewals and retention</em></div>
-  <div class="sb">
-    <div class="q"><label class="qt" for="r_increase">A resident's rent is going up $75 and they have been here four years. Write what you would actually say to them. <span class="req">*</span></label><textarea id="r_increase" data-req placeholder="&quot;…&quot;"></textarea></div>
-    <div class="q"><label class="qt" for="r_leaving">Someone tells you they are leaving. What do you do in the next ten minutes? <span class="req">*</span></label><textarea id="r_leaving" data-req></textarea></div>
-    <div class="q"><label class="qt" for="r_early">How early would you start a renewal conversation, and why? <span class="req">*</span></label><textarea id="r_early" data-req></textarea></div>
-    <div class="q"><label class="qt" for="r_nokeep">Tell us about a customer or resident you could not keep. What would you do differently? <span class="req">*</span></label><textarea id="r_nokeep" data-req></textarea></div>
-    <div class="q"><label class="qt" for="r_track">How would you keep track of a hundred renewals at different stages? <span class="req">*</span></label><textarea id="r_track" data-req></textarea></div>
-    <div class="q"><label class="qt" for="r_value">Someone says "why should I stay when I can get cheaper down the street?" What is your answer? <span class="req">*</span></label><textarea id="r_value" data-req></textarea></div>
-  </div>
-</section>
-
-<section id="s_manager" class="hide">
-  <div class="sh">3 · The work <em>leading a team</em></div>
-  <div class="sb">
-    <div class="q"><label class="qt" for="m_assign">How do you assign work to the people who report to you? <span class="req">*</span></label><textarea id="m_assign" data-req></textarea></div>
-    <div class="q"><label class="qt" for="m_bottom">One of your people has been at the bottom of the board three months running. Walk us through what you do. <span class="req">*</span></label><textarea id="m_bottom" data-req></textarea></div>
-    <div class="q"><label class="qt" for="m_recognise">How do you recognise someone who has done exceptionally well? <span class="req">*</span></label><textarea id="m_recognise" data-req></textarea></div>
-    <div class="q"><label class="qt" for="m_disagree">Tell us about a time you disagreed with your own manager. How did you handle it? <span class="req">*</span></label><textarea id="m_disagree" data-req></textarea></div>
-    <div class="q"><label class="qt" for="m_discount">Your team keeps discounting to close deals. How do you change that? <span class="req">*</span></label><textarea id="m_discount" data-req></textarea></div>
-    <div class="q"><label class="qt" for="m_numbers">What numbers would you look at every week to know your team is on track? <span class="req">*</span></label><textarea id="m_numbers" data-req></textarea></div>
-    <div class="q"><label class="qt" for="m_coach">How often do you coach your people, and what does that actually look like? <span class="req">*</span></label><textarea id="m_coach" data-req></textarea></div>
-  </div>
-</section>
-
-
-<section id="s_numbers" class="hide">
-  <div class="sh">4 · Your track record <em>the fun part — tell us how good you actually are</em></div>
-  <div class="sb">
-    <div class="q"><label class="qt" for="x_best">Best month you have ever had in any sales or leasing job — the actual number, and what you were selling. <span class="req">*</span></label><textarea id="x_best" data-req></textarea></div>
-    <div class="q"><label class="qt" for="x_mgr">Who was your manager then, and may we speak with them? <span class="req">*</span></label><input type="text" id="x_mgr" data-req placeholder="Name, and yes/no"></div>
-    <div class="q"><label class="qt" for="x_conv">Out of every 10 genuine leads, how many end up signing — and how do you know that number?</label><p class="hint">Never tracked it? Say so. We would rather have that than a guess.</p><textarea id="x_conv"></textarea></div>
-  </div>
-</section>
-
-
-<section id="s_zones" class="hide">
-  <div class="sh">5 · Your patch <em>you will be moving between buildings, not sitting in one</em></div>
-  <div class="sb">
-    <div class="q">
-      <label class="qt">Which areas could you cover reliably? <span class="req" id="zreq">*</span></label>
-      <p class="hint">Tick everything that genuinely works for you.</p>
-      <div class="checks" id="zones"></div>
+      <div id="roleblurb" class="intro hide" style="margin:12px 0 0"></div>
     </div>
     <div class="q"><div class="grid">
-      <div><label class="qt" for="z_commute">Longest one-way drive you would accept as routine?</label>
-        <select id="z_commute"><option value="">Choose one…</option><option>Up to 20 minutes</option><option>Up to 30 minutes</option><option>Up to 45 minutes</option><option>45+ minutes — distance does not bother me</option></select></div>
-      <div><label class="qt" for="z_lic">Valid driver's licence and a reliable vehicle you would use daily?</label>
-        <select id="z_lic"><option value="">Choose one…</option><option>Yes — both</option><option>Licence yes, no reliable vehicle</option><option>Neither</option></select></div>
+      <div><label class="qt" for="f_name">Full name <span class="req">*</span></label><input type="text" id="f_name" data-req></div>
+      <div><label class="qt" for="f_email">Email <span class="req">*</span></label><input type="email" id="f_email" data-req></div>
+      <div><label class="qt" for="f_phone">Phone <span class="req">*</span></label><input type="tel" id="f_phone" data-req></div>
+      <div><label class="qt" for="f_source">How did you hear about us?</label><input type="text" id="f_source" placeholder="Indeed, referral, saw a sign…"></div>
     </div></div>
   </div>
 </section>
 
+<section id="s_new" class="hide">
+  <div class="sh newbie">New to leasing? <em>Perfect. Here is why that is not a problem.</em></div>
+  <div class="sb">
+    <div class="intro" style="margin:0"><b>You are not behind.</b> Some of our strongest people came from retail, hospitality, trades, call centres and salons. Leasing takes weeks to learn. Drive, and how you read people, we can't teach — so that's all we're asking about.</div>
+  </div>
+</section>
 
 <section>
-  <div class="sh">6 · Practicalities</div>
+  <div class="sh">2 · The eight <em>short answers win — two or three sentences each</em></div>
+  <div class="sb">
+
+    <!-- Q1 · D1 conversion / learning agility -->
+    <div class="q" id="w_night">
+      <label class="qt" for="a_night">It is <b>8:40 on a Tuesday night.</b> A lead comes in on a suite you have available. What happens next? <span class="req">*</span></label>
+      <p class="hint">Be specific about timing.</p>
+      <textarea id="a_night"></textarea>
+    </div>
+    <div class="q hide" id="w_taught2">
+      <label class="qt" for="n_taught">What is the hardest thing you have ever taught yourself? How did you do it, and how long did it take? <span class="req">*</span></label>
+      <textarea id="n_taught"></textarea>
+    </div>
+
+    <!-- Q2 · D2 price integrity -->
+    <div class="q" id="w_price">
+      <label class="qt" for="a_price">Someone tours, loves it, then says: <em>"It's nice, but it's $100 more than the place on 109th."</em> <span class="req">*</span></label>
+      <p class="hint">Your actual words — what you would say out loud.</p>
+      <textarea id="a_price"></textarea>
+    </div>
+    <div class="q hide" id="w_persuade">
+      <label class="qt" for="n_persuade">Tell us about a time you <b>said no</b> to someone who really wanted a yes. <span class="req">*</span></label>
+      <p class="hint">A customer, a friend, a family member. What did you say, and did you hold it?</p>
+      <textarea id="n_persuade"></textarea>
+    </div>
+
+    <!-- Q3 · D3 volume drive -->
+    <div class="q" id="w_best">
+      <label class="qt" for="x_best">Best month you have ever had in any sales or leasing job — the number, what you were selling, and the <b>manager who can verify</b> it. <span class="req">*</span></label>
+      <textarea id="x_best"></textarea>
+    </div>
+    <div class="q hide" id="w_depth">
+      <label class="qt" for="n_depth">When have you been <b>measured or ranked</b> against other people — sport, school, a target at work, a board on a wall? Where did you finish, and how did it feel? <span class="req">*</span></label>
+      <textarea id="n_depth"></textarea>
+    </div>
+
+    <!-- Q4 · D4 variable pay appetite -->
+    <div class="q" id="w_pay">
+      <label class="qt" for="p_pay">What do you need to earn in a year for this move to be worth it — and what is the longest you have gone <b>without a pay cheque</b> you could count on? <span class="req">*</span></label>
+      <p class="hint">Go on, say the real number.</p>
+      <textarea id="p_pay"></textarea>
+    </div>
+    <div class="q hide" id="w_pay2">
+      <label class="qt" for="n_pay">What do you need to earn in a year for this to be worth it — and how would you handle a month where you <b>earned less than you expected</b> because you sold less? <span class="req">*</span></label>
+      <p class="hint">Go on, say the real number. Most of the pay here moves with what you sign.</p>
+      <textarea id="n_pay"></textarea>
+    </div>
+
+    <!-- Q5 · D5 emotional intelligence -->
+    <div class="q">
+      <label class="qt" for="e_angry">The <b>angriest</b> person you have ever had to deal with — at work, in a shop, anywhere. What were they <b>actually</b> upset about? <span class="req">*</span></label>
+      <p class="hint">It is almost never the thing they are shouting about. How did you find the real one?</p>
+      <textarea id="e_angry" data-req></textarea>
+    </div>
+
+    <!-- Q6 · D6 collaboration + leadership signal -->
+    <div class="q">
+      <label class="qt" for="g_taught">Who has taught you the most about dealing with people — and what have you taught someone else? <span class="req">*</span></label>
+      <p class="hint">Did you volunteer, or were you asked?</p>
+      <textarea id="g_taught" data-req></textarea>
+    </div>
+
+    <!-- Q7 · D7 integrity -->
+    <div class="q" id="w_mistake">
+      <label class="qt" for="v_mistake">A <b>mistake</b> that cost an employer money or time. Who did you tell, and when? <span class="req">*</span></label>
+      <p class="hint">Everyone has one. What you did next is the whole answer.</p>
+      <textarea id="v_mistake"></textarea>
+    </div>
+    <div class="q hide" id="w_wrong">
+      <label class="qt" for="n_wrong">A time you <b>got something wrong</b> that affected other people. Who did you tell, and how quickly? <span class="req">*</span></label>
+      <p class="hint">Everyone has one. What you did next is the whole answer.</p>
+      <textarea id="n_wrong"></textarea>
+    </div>
+
+    <!-- Q8 · leadership / diagnosis -->
+    <div class="q">
+      <label class="qt" for="g_run">Think of somewhere you have worked, studied or volunteered. If you <b>ran the place</b> for one day, what is the first thing you would change — and why <b>that</b> one? <span class="req">*</span></label>
+      <textarea id="g_run" data-req></textarea>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="sh">3 · The practical bits <em>dropdowns, thirty seconds</em></div>
   <div class="sb">
     <div class="q"><div class="grid">
-      <div><label class="qt" for="p_hours">What hours do you work now? What do you <b>like</b> and <b>dislike</b> about them? <span class="req">*</span></label><textarea id="p_hours" data-req style="min-height:70px"></textarea></div>
-      <div><label class="qt" for="p_sat">Renters tour when they are not at work — evenings, Saturdays and Sundays. What suits you? <span class="req">*</span></label>
-        <p class="hint">Just tell us what you can work — we don't need to know why. ZEN accommodates scheduling needs and you never have to explain a reason on this form.</p>
+      <div>
+        <label class="qt" for="p_sat">Renters tour when they are not at work — evenings, Saturdays and Sundays. What suits you? <span class="req">*</span></label>
+        <p class="hint">Just tell us what you can work — we don't need to know why. ZEN accommodates scheduling needs and you never have to explain a reason here.</p>
         <select id="p_sat" data-req><option value="">Choose one…</option>
           <option>I would work evenings and weekends for the customer experience — that is when renters are actually free</option>
           <option>Evenings, Saturdays and Sundays all work</option>
@@ -320,57 +236,18 @@ details summary:hover{color:var(--cyan)}
           <option>Saturdays and Sundays yes, evenings limited</option>
           <option>Evenings yes, weekends limited</option>
           <option>Weekdays only, daytime</option>
-          <option>I need a different pattern — happy to talk it through</option></select></div>
+          <option>I need a different pattern — happy to talk it through</option></select>
+      </div>
+      <div id="w_lic">
+        <label class="qt" for="z_lic">Driver's licence and a reliable vehicle you would use daily? <span class="req" id="licreq">*</span></label>
+        <select id="z_lic"><option value="">Choose one…</option><option>Yes — both</option><option>Licence yes, no reliable vehicle</option><option>Neither</option></select>
+      </div>
     </div></div>
-    <div class="q">
-      <label class="qt">Which of these have you actually used?</label>
-      <p class="hint">Nobody has used all of these. We train you on ours.</p>
-      <div class="checks" id="tools"></div>
+    <div class="q" id="w_zones">
+      <label class="qt">Which areas could you cover reliably?</label>
+      <p class="hint">Tick everything that genuinely works for you.</p>
+      <div class="checks" id="zones"></div>
     </div>
-    <div class="q"><label class="qt" for="p_pay">What would you need to earn in a year for this move to be worth it — and how did you land on that number? <span class="req">*</span></label><p class="hint" id="payhint">Go on, say the real number. We would rather know now.</p><textarea id="p_pay" data-req></textarea></div>
-    <div class="q"><label class="qt" for="p_leave">Why are you leaving your current role, and what would have kept you? <span class="req">*</span></label><textarea id="p_leave" data-req></textarea></div>
-  </div>
-</section>
-
-
-<section>
-  <div class="sh">7 · How you work with people</div>
-  <div class="sb">
-    <div class="q"><label class="qt" for="v_mistake">Tell us about a mistake that cost an employer money or time. Who did you tell, and when? <span class="req">*</span></label><p class="hint">Everyone has one. What you did next is the whole answer.</p><textarea id="v_mistake" data-req></textarea></div>
-    <div class="q"><label class="qt" for="v_commit">Tell us about a commitment you made that you could not keep. What did you do? <span class="req">*</span></label><textarea id="v_commit" data-req></textarea></div>
-    <div class="q"><label class="qt" for="v_help">Tell us about a time you helped a colleague when there was nothing in it for you. <span class="req">*</span></label><textarea id="v_help" data-req></textarea></div>
-    <div class="q"><label class="qt" for="v_coach">Tell us about feedback you <b>disagreed with</b>. What did you do with it? <span class="req">*</span></label><textarea id="v_coach" data-req></textarea></div>
-    <div class="q"><label class="qt" for="v_boundary">This work can run into your evenings. How do you protect your own time so you do not burn out? <span class="req">*</span></label><textarea id="v_boundary" data-req></textarea></div>
-  </div>
-</section>
-
-
-<section>
-  <div class="sh">8 · Rules of the road <em>we train every bit of this — just tell us where you are today</em></div>
-  <div class="sb">
-    <div class="tip">Nobody walks in an expert on this. "I don't know, but I would ask" is a genuinely good answer here — we would rather train you than untrain a bluffer.</div>
-    <div class="q"><label class="qt" for="c_ahra">In Alberta there are things a landlord cannot take into account when choosing between applicants. What do you know about that? <span class="req">*</span></label><textarea id="c_ahra" data-req placeholder="What I know today…"></textarea></div>
-    <div class="q"><label class="qt" for="c_rta">How do you keep up with rental rules and what is happening in the local market?</label><textarea id="c_rta"></textarea></div>
-    <div class="q"><label class="qt" for="c_casl">We text and email prospects, partly through an automated assistant. What do you know about the rules for sending commercial messages in Canada?</label><p class="hint">"Nothing yet" is fine.</p><textarea id="c_casl"></textarea></div>
-  </div>
-</section>
-
-
-<section>
-  <div class="sh">9 · The people around you</div>
-  <div class="sb">
-    <div class="q"><label class="qt" for="g_follow">Tell us about a time people followed your lead when you were <b>not</b> the one in charge. <span class="req">*</span></label><textarea id="g_follow" data-req></textarea></div>
-    <div class="q"><label class="qt" for="g_taught">Who taught you the most in your last role — and what did you teach someone else? <span class="req">*</span></label><p class="hint">Did you volunteer, or were you asked?</p><textarea id="g_taught" data-req></textarea></div>
-    <div class="q"><label class="qt" for="g_struggle">When someone you work with is struggling, what do you actually do? <span class="req">*</span></label><textarea id="g_struggle" data-req></textarea></div>
-    <div class="q"><label class="qt" for="g_run">If you ran your current workplace for one day, what is the first thing you would change — and why that one? <span class="req">*</span></label><textarea id="g_run" data-req></textarea></div>
-  </div>
-</section>
-
-<section>
-  <div class="sh">10 · Now you interview us</div>
-  <div class="sb">
-    <div class="q"><label class="qt" for="q_ask">You get three questions for us. Make them count. <span class="req">*</span></label><p class="hint">Anything at all — pay, the team, what our top performer does differently, what the last person found hard. Sharp questions tell us a lot.</p><textarea id="q_ask" data-req placeholder="1.&#10;2.&#10;3."></textarea></div>
-    <div class="q"><label class="qt" for="q_success">Last one, and it matters. Twelve months in and this has gone brilliantly — what happened? <span class="req">*</span></label><textarea id="q_success" data-req></textarea></div>
   </div>
 </section>
 
@@ -378,17 +255,19 @@ details summary:hover{color:var(--cyan)}
   <div class="sh">Finish</div>
   <div class="sb">
     <div class="q" style="padding-top:2px">
-      <label class="chk" style="max-width:640px"><input type="checkbox" id="f_consent" data-req><span>I confirm my answers are my own and accurate, and I consent to ZEN Residential collecting this information to assess my application, as described at the top. <span class="req">*</span></span></label>
+      <label class="chk" style="max-width:620px"><input type="checkbox" id="f_consent" data-req><span>My answers are my own and accurate, and I consent to ZEN Residential collecting this information to assess my application. <span class="req">*</span></span></label>
     </div>
     <div class="btnrow">
-      <button id="sendbtn" onclick="sendToZen()">Finish &amp; send to ZEN</button>
-      <button class="alt" onclick="mailOut()">Email it instead</button>
-      <button class="alt" onclick="copyOut()">Copy</button>
+      <button id="finishbtn" onclick="finish()">Finish — build my application</button>
+    </div>
+    <div class="btnrow hide" id="sendrow">
+      <button onclick="mailOut()">Email it to ZEN</button>
       <button class="ghost" onclick="downloadOut()">Download a copy</button>
     </div>
     <div id="msg"></div>
-    <textarea id="out" placeholder="Press Finish — your completed application appears here, ready to send."></textarea>
-    <p class="legal" style="margin-top:12px">Your answers are kept in this browser as you type, so you will not lose them if you close the tab. If sending ever fails, press <b>Download a copy</b> and email the file to <b>Carries@zenresidential.ca</b> — that always works. Thanks for the time you put into this; we read every one, properly.</p>
+    <textarea id="out" readonly aria-readonly="true" placeholder="Press Finish — your application appears here, ready to send."></textarea>
+    <p class="hint" style="margin:6px 0 0">This is the exact text that goes to ZEN. It is built from your answers and cannot be edited here — to change something, edit the question above and press Rebuild.</p>
+    <p class="legal" style="margin-top:10px">Your answers are kept in this browser as you type, so closing the tab will not lose them. If sending ever fails, press <b>Download a copy</b> and email the file to <b>Carries@zenresidential.ca</b> — that always works. Thanks for the time; we read every one, properly.</p>
   </div>
 </section>
 </div>
@@ -397,226 +276,169 @@ details summary:hover{color:var(--cyan)}
 <footer>ZEN Residential Management Group Ltd. &nbsp;·&nbsp; Balancing Life and Living &nbsp;·&nbsp; We are an equal opportunity employer. Hiring decisions are based on demonstrated ability and job requirements only.</footer>
 
 <script>
-/* ══════════════════════════════════════════════════════════════
-   WHERE APPLICATIONS GO
-   Paste your form endpoint between the quotes on the ENDPOINT line
-   below. Applications then post straight through to the inbox and
-   the applicant presses ONE button.
-   Leave it empty and the form falls back to the email route.
-   ══════════════════════════════════════════════════════════════ */
-var ENDPOINT = '';
-var ZEN_EMAIL = 'Carries@zenresidential.ca';
-
 var ZONES=['Edmonton — north','Edmonton — south','Edmonton — west / central','Edmonton — east','Calgary — northeast','Calgary — northwest','Calgary — south','I can travel anywhere in the city'];
-var TOOLS=['Yardi Voyager','RentCafe','Buildium','GoHighLevel / other CRM','Salesforce or HubSpot','Rentfaster / Rentals.ca / Kijiji','Microsoft Office / Outlook','Canva or photo editing','None of these yet'];
 var BLURB={
- agent:'Field leasing across apartment buildings in your city. Low base, strong commission per lease signed, evenings and weekends, and a lot of driving. Our standard is 20 signed leases a month.',
- sfh:'Contractor work leasing single-family homes, paid per door. No base and no set hours — you take as much as you can handle, alongside whatever else you do.',
- online:'Office-based leasing by phone, text and video tour. You are the first voice a prospect hears, and speed matters more than anything else in this seat.',
- admin:'The engine room — leases, data, documents and accuracy. Nothing gets signed properly without this role, and small errors cost real money.',
- renewals:'Keeping the residents we already have. Renewal conversations, rent increases handled well, and expiry managed before it becomes a vacancy.',
- manager:'Leading a leasing team — assigning work, coaching, holding the numbers and protecting price. You will be measured on what your team does, not what you do.'
-};
-var MODULES={agent:'s_agent',sfh:'s_sfh',online:'s_online',admin:'s_admin',renewals:'s_renewals',manager:'s_manager'};
-var FIELD_ROLES=['agent','sfh'];
+ agent:'Field leasing across apartment buildings. Commission per signed lease, evenings and weekends, and a lot of driving.',
+ sfh:'Contractor work paid per door. No base, no set hours, no cap on how much you take on. Suits someone already self-employed.',
+ online:'Phone, text and video from the office. Speed of reply is the whole job.',
+ admin:'Documents, data and accuracy. Volume weeks and no room for a wrong lease date.',
+ renewals:'Keeping good residents. Conversations about price, value and staying put.',
+ manager:'Leading a leasing team on numbers, coaching and price discipline.'};
+var DRIVE={agent:1,sfh:1,online:0,admin:0,renewals:0,manager:1};
 
-function boxes(list,el,name){document.getElementById(el).innerHTML=list.map(function(t){
-  return '<label class="chk"><input type="checkbox" data-grp="'+name+'" value="'+t.replace(/"/g,'&quot;')+'" onchange="prog()"><span>'+t+'</span></label>';}).join('');}
-boxes(ZONES,'zones','zones'); boxes(TOOLS,'tools','tools');
+function el(id){return document.getElementById(id);}
+function show(id,on){var e=el(id); if(e) e.classList.toggle('hide',!on);}
+var MODE='';
 
-function grp(n){return Array.prototype.slice.call(document.querySelectorAll('[data-grp="'+n+'"]:checked')).map(function(c){return c.value;});}
-function v(id){var e=document.getElementById(id);return e?(e.value||'').trim():'';}
-function show(id,on){var e=document.getElementById(id); if(e) e.className=on?'':'hide';}
+el('zones').innerHTML=ZONES.map(function(z,i){
+  return '<label class="chk"><input type="checkbox" id="zn_'+i+'" onchange="prog()"><span>'+z+'</span></label>';}).join('');
 
-var TRACK='';
-function pick(t,noScroll){
-  TRACK=t;
-  document.getElementById('rest').className='';
-  document.getElementById('gb_new').className='b1'+(t==='new'?' on':'');
-  document.getElementById('gb_exp').className='b2'+(t==='exp'?' on':'');
-  show('expkind', t==='exp');
-  var k=document.getElementById('f_kind');
-  if(t==='exp'){k.setAttribute('data-req','');} else {k.removeAttribute('data-req'); k.value='';}
-  branch();
-  if(!noScroll) document.getElementById('rest').scrollIntoView({behavior:'smooth',block:'start'});
-}
-function trackVal(){ return TRACK==='new' ? 'new' : (v('f_kind')||'sales'); }
-function branch(){
-  var role=v('f_role'), track=trackVal();
-  for(var k in MODULES) show(MODULES[k], role===k);
-  var bl=document.getElementById('roleblurb');
-  if(role){bl.className='tip';bl.innerHTML='<b>What this role is:</b> '+BLURB[role];} else {bl.className='tip hide';}
-  show('s_new', TRACK==='new');
-  show('s_numbers', TRACK==='exp');
-  show('s_zones', FIELD_ROLES.indexOf(role)>-1);
-  var ph=document.getElementById('payhint');
-  if(role==='agent') ph.textContent='Go on, say the real number. We would rather know now. This seat is a low base with strong per-lease commission — people who hit the standard should out-earn a salary.';
-  else if(role==='sfh') ph.textContent='Go on, say the real number. We would rather know now. This is paid per door with no base, so tell us what makes it worth your time.';
-  else ph.textContent='Go on, say the real number. We would rather know now.';
+function pick(m){
+  MODE=m;
+  el('gb_new').classList.toggle('on',m==='new');
+  el('gb_exp').classList.toggle('on',m==='exp');
+  show('rest',true); show('s_new',m==='new');
+  // swap the first three questions for the no-experience versions
+  show('w_night',   m==='exp'); show('w_taught2', m==='new');
+  show('w_price',   m==='exp'); show('w_persuade',m==='new');
+  show('w_best',    m==='exp'); show('w_depth',   m==='new');
+  show('w_pay',     m==='exp'); show('w_pay2',    m==='new');
+  show('w_mistake', m==='exp'); show('w_wrong',   m==='new');
+  ['a_night','a_price','x_best','p_pay','v_mistake'].forEach(function(i){el(i).toggleAttribute('data-req',m==='exp');});
+  ['n_taught','n_persuade','n_depth','n_pay','n_wrong'].forEach(function(i){el(i).toggleAttribute('data-req',m==='new');});
+  el('rest').scrollIntoView({behavior:'smooth',block:'start'});
   prog();
 }
 
-function activeReq(){
-  return Array.prototype.slice.call(document.querySelectorAll('[data-req]')).filter(function(e){
-    return !e.closest('.hide');
-  });
+function branch(){
+  var r=el('f_role').value;
+  var b=el('roleblurb');
+  if(r){ b.innerHTML='<b>'+el('f_role').selectedOptions[0].text+'</b><br>'+BLURB[r]; b.classList.remove('hide'); }
+  else b.classList.add('hide');
+  var needsCar=!!DRIVE[r];
+  show('w_lic',needsCar); show('w_zones',needsCar);
+  el('z_lic').toggleAttribute('data-req',needsCar);
+  prog();
 }
-function zonesNeeded(){ return FIELD_ROLES.indexOf(v('f_role'))>-1; }
 
 function prog(){
-  var f=activeReq(), done=0;
-  f.forEach(function(e){ if(e.type==='checkbox'){ if(e.checked) done++; } else if((e.value||'').trim()) done++; });
-  var total=f.length;
-  if(zonesNeeded()){ total++; if(grp('zones').length) done++; }
-  document.getElementById('bar').style.width=(total?Math.round(done/total*100):0)+'%';
+  var req=Array.prototype.filter.call(document.querySelectorAll('[data-req]'),function(e){
+    return e.type==='checkbox'||e.offsetParent!==null;});
+  var done=req.filter(function(e){return e.type==='checkbox'?e.checked:(e.value||'').trim();}).length;
+  el('bar').style.width=(req.length?Math.round(done/req.length*100):0)+'%';
 }
-document.addEventListener('input',prog); document.addEventListener('change',prog);
+document.addEventListener('input',prog);
+document.addEventListener('change',prog);
 
-function missing(){
-  var out=[], first=null;
-  activeReq().forEach(function(e){
-    var ok = e.type==='checkbox' ? e.checked : !!(e.value||'').trim();
-    if(!ok){ var c=e.closest('.q')||e.closest('.pick')||e.parentElement; var t=c?c.querySelector('.qt'):null;
-      out.push(t?t.textContent.replace('*','').trim().slice(0,64):e.id); if(!first) first=e; }
-  });
-  if(zonesNeeded() && !grp('zones').length) out.push('Which areas could you cover reliably');
-  if(first) first.scrollIntoView({behavior:'smooth',block:'center'});
-  return out;
-}
+function v(id){var e=el(id);return e?(e.value||'').trim():'';}
+function line(label,val){return val?('▸ '+label+'\n  '+val.replace(/\n/g,'\n  ')+'\n\n'):'';}
 
-var COMMON_A=[['Role applied for','f_role'],['Experience type','f_kind'],['How they heard about us','f_source']];
-var NEWQ=[['Why leasing, why now','n_why'],['Hardest part for them','n_hard'],['Hardest thing self-taught','n_taught'],['Out of their depth — first week','n_depth'],['Worse at than they would like','n_worse'],['Changed someone’s mind','n_persuade']];
-var EIQ=[['Angriest person — the real issue','e_angry'],['How they reset after rudeness','e_reset'],['A time they misread someone','e_read'],['Own it or pass it up — their line','e_escal']];
-var ROLEQ={
- agent:[['8:40pm Tuesday lead','a_night'],['"$100 more than 109th"','a_price'],['Tour then goes quiet — 48h','a_quiet'],['60 days, cannot drop rent','a_stale'],['Funnel maths to 20 leases','a_math'],['Weekly leaderboard / the bottom','a_board']],
- sfh:[['Currently self-employed','h_self'],['Longest without a pay cheque','h_nopay'],['8:40pm Tuesday lead','h_night'],['$100 over budget','h_price'],['Houses per month realistically','h_volume'],['Licence / brokerage disclosure','h_conflict']],
- online:[['8:40pm Tuesday lead','o_night'],['The actual follow-up text','o_write'],['On-camera video tours','o_video'],['14 leads, tour in 20 min','o_juggle'],['Phone — love it or avoid it','o_phone'],['Working alongside an AI assistant','o_ai']],
- admin:[['How they check their own work','d_process'],['An error they made','d_error'],['40 leases by Friday, 3 incomplete','d_volume'],['Chasing someone who will not reply','d_chase'],['Systems used / picked up fastest','d_systems'],['Staying accurate on the 200th one','d_boring']],
- renewals:[['$75 increase, 4-year resident','r_increase'],['They say they are leaving','r_leaving'],['How early to start renewals','r_early'],['One they could not keep','r_nokeep'],['Tracking 100 renewals','r_track'],['"Cheaper down the street"','r_value']],
- manager:[['Assigning work','m_assign'],['Bottom of the board 3 months','m_bottom'],['Recognising strong performance','m_recognise'],['Disagreeing with their manager','m_disagree'],['Team keeps discounting','m_discount'],['Weekly numbers they watch','m_numbers'],['Coaching cadence','m_coach']]
-};
-var NUMQ=[['Best month ever','x_best'],['Manager who can verify','x_mgr'],['Leads out of 10 that sign','x_conv']];
-var ZONEQ=[['Longest routine commute','z_commute'],['Licence and vehicle','z_lic']];
-var PRACQ=[['Current hours — likes and dislikes','p_hours'],['Evenings, Saturdays and Sundays','p_sat'],['What they need to earn','p_pay'],['Why leaving / what would have kept them','p_leave']];
-var VALQ=[['Mistake that cost money','v_mistake'],['Commitment they could not keep','v_commit'],['Helped a colleague for nothing','v_help'],['Feedback they disagreed with','v_coach'],['Protecting their own time','v_boundary']];
-var RULEQ=[['What a landlord cannot consider (AB)','c_ahra'],['Keeping up with rules and market','c_rta'],['Rules for commercial messages','c_casl']];
-var LEADQ=[['People followed them without a title','g_follow'],['Who taught them / who they taught','g_taught'],['When a colleague is struggling','g_struggle'],['What they would change if they ran the place','g_run']];
-var ENDQ=[['Their three questions for us','q_ask'],['What success would look like','q_success']];
-
-function blockOut(L,title,arr){
-  if(!arr||!arr.length) return;
-  L.push(''); L.push('── '+title+' '+'─'.repeat(Math.max(0,52-title.length)));
-  arr.forEach(function(q){ var a=v(q[1])||'(not answered)'; L.push(''); L.push('▸ '+q[0]); L.push('  '+a.replace(/\n/g,'\n  ')); });
-}
 function build(){
-  var role=v('f_role'), track=trackVal();
-  var L=[], id='ZEN-'+Date.now().toString(36).toUpperCase();
-  L.push('ZEN RESIDENTIAL — LEASING & REVENUE DIVISION APPLICATION');
-  L.push('='.repeat(60));
-  L.push('Submission ID: '+id);
-  L.push('Submitted:     '+new Date().toLocaleString());
-  L.push('Name:          '+v('f_name'));
-  L.push('Email:         '+v('f_email'));
-  L.push('Phone:         '+v('f_phone'));
-  L.push('ROLE:          '+(document.getElementById('f_role').selectedOptions[0]||{text:''}).text);
-  L.push('BACKGROUND:    '+(TRACK==='new'?'NEW TO LEASING — entered via the new-to-leasing path':'Already leasing or selling'+(v('f_kind')?' · '+(document.getElementById('f_kind').selectedOptions[0]||{text:''}).text:'')));
-  if(FIELD_ROLES.indexOf(role)>-1) L.push('AREAS COVERED: '+(grp('zones').join(' · ')||'none selected'));
-  L.push('TOOLS USED:    '+(grp('tools').join(' · ')||'none selected'));
-  L.push(''); L.push('='.repeat(60));
-  blockOut(L,'ABOUT',COMMON_A);
-  if(TRACK==='new') blockOut(L,'BRAND NEW TO LEASING',NEWQ);
-  blockOut(L,'PEOPLE',EIQ);
-  blockOut(L,'ROLE-SPECIFIC — '+(role||'').toUpperCase(),ROLEQ[role]);
-  if(TRACK==='exp') blockOut(L,'TRACK RECORD',NUMQ);
-  if(FIELD_ROLES.indexOf(role)>-1) blockOut(L,'COVERAGE',ZONEQ);
-  blockOut(L,'PRACTICALITIES',PRACQ);
-  blockOut(L,'WORKING WITH PEOPLE',VALQ);
-  blockOut(L,'RULES OF THE ROAD',RULEQ);
-  blockOut(L,'THE PEOPLE AROUND THEM',LEADQ);
-  blockOut(L,'THEIR TURN',ENDQ);
-  L.push(''); L.push('='.repeat(60));
-  L.push('Applicant confirmed accuracy and consented to collection (Alberta PIPA).');
-  L.push('Collected for employment assessment only · shared with HR and the VP, Leasing & Revenue · retained 12 months.');
-  return L.join('\n');
+  var missing=Array.prototype.filter.call(document.querySelectorAll('[data-req]'),function(e){
+    if(e.type!=='checkbox' && e.offsetParent===null) return false;
+    return e.type==='checkbox'?!e.checked:!(e.value||'').trim();});
+  if(missing.length){
+    el('msg').innerHTML='<div class="err">'+missing.length+' question'+(missing.length>1?'s':'')+' still to go — the first one is highlighted.</div>';
+    missing[0].focus(); missing[0].scrollIntoView({behavior:'smooth',block:'center'});
+    return '';
+  }
+  var zs=ZONES.filter(function(z,i){var c=el('zn_'+i);return c&&c.checked;});
+  var T='ZEN RESIDENTIAL — LEASING & REVENUE DIVISION APPLICATION\n';
+  T+='Submitted: '+new Date().toLocaleString()+'\n';
+  T+='Name:          '+v('f_name')+'\n';
+  T+='Email:         '+v('f_email')+'\n';
+  T+='Phone:         '+v('f_phone')+'\n';
+  T+='ROLE:          '+(el('f_role').selectedOptions[0]||{text:''}).text+'\n';
+  T+='BACKGROUND:    '+(MODE==='new'?'New to leasing':'Already leasing or selling')+'\n';
+  T+='Heard via:     '+(v('f_source')||'—')+'\n\n';
+  if(MODE==='exp'){
+    T+=line('8:40pm Tuesday lead',v('a_night'));
+    T+=line('"$100 more than 109th"',v('a_price'));
+    T+=line('Best month ever + manager who can verify',v('x_best'));
+    T+=line('What they need to earn / longest without a pay cheque',v('p_pay'));
+  }else{
+    T+=line('Hardest thing self-taught',v('n_taught'));
+    T+=line('Said no to someone who wanted a yes',v('n_persuade'));
+    T+=line('Measured or ranked against other people',v('n_depth'));
+    T+=line('What they need to earn / a month they earned less',v('n_pay'));
+  }
+  T+=line('Angriest person — the real issue',v('e_angry'));
+  T+=line('Who taught them / who they taught',v('g_taught'));
+  T+=line(MODE==='new'?'Got something wrong that affected others':'Mistake that cost money',
+          MODE==='new'?v('n_wrong'):v('v_mistake'));
+  T+=line('What they would change if they ran the place',v('g_run'));
+  T+=line('Evenings, Saturdays and Sundays',v('p_sat'));
+  if(v('z_lic')) T+=line('Licence and vehicle',v('z_lic'));
+  if(zs.length)  T+=line('Zones they can cover',zs.join(' · '));
+  el('out').value=T;
+  return T;
 }
-function finish(){
-  var m=missing(), box=document.getElementById('msg');
-  if(!TRACK){box.innerHTML='<div class="err">Start by choosing one of the two buttons at the top.</div>';return;}
-  if(!v('f_role')){box.innerHTML='<div class="err">Pick a role first — the rest of the form depends on it.</div>';return;}
-  if(m.length){box.innerHTML='<div class="err">Almost there — '+m.length+' still to answer. First one: “'+m[0]+'”.</div>';return;}
-  document.getElementById('out').value=build();
-  box.innerHTML='<div class="done">Done — thank you. Now press <b>Email it to ZEN</b>, or <b>Copy</b> and paste it into an email to Carries@zenresidential.ca.</div>';
-  document.getElementById('out').scrollIntoView({behavior:'smooth',block:'center'});
-}
-function ensure(){var t=document.getElementById('out').value; if(!t){finish();t=document.getElementById('out').value;} return t;}
-function roleText(){var s=document.getElementById('f_role');return (s&&s.selectedOptions[0]||{text:'role'}).text;}
-function subjectLine(){return 'Application — '+roleText()+' — '+(v('f_name')||'applicant');}
+var ZEN_EMAIL='Carries@zenresidential.ca';
 
-function fallbackCopy(){try{document.getElementById('out').select();return document.execCommand('copy');}catch(e){return false;}}
+var BUILT=false;
+function finish(){
+  var t=build(); if(!t) return;
+  BUILT=true;
+  el('sendrow').classList.remove('hide');
+  el('finishbtn').classList.add('hide');
+  el('msg').innerHTML='<div class="done">Done — your application is ready. Press <b>Email it to ZEN</b> below; your mail app opens with everything copied and attached, ready to send.</div>';
+  el('out').scrollIntoView({behavior:'smooth',block:'center'});
+}
+/* If they change an answer after building, the text below is stale —
+   hide the send buttons until they rebuild, so nobody emails an old version. */
+function staleCheck(e){
+  if(!BUILT) return;
+  if(e.target && (e.target.id==='out')) return;
+  BUILT=false;
+  el('out').value='';
+  el('sendrow').classList.add('hide');
+  el('finishbtn').classList.remove('hide');
+  el('finishbtn').textContent='Rebuild my application';
+  el('msg').innerHTML='<div class="err">You changed an answer — press <b>Rebuild my application</b> so your update is included.</div>';
+}
+document.addEventListener('input',staleCheck);
+document.addEventListener('change',staleCheck);
+function ensure(){var t=el('out').value; if(!t) t=build(); return t;}
+
+function fallbackCopy(){try{el('out').select();return document.execCommand('copy');}catch(e){return false;}}
 function copyText(t,cb){
   if(navigator.clipboard&&navigator.clipboard.writeText){
     navigator.clipboard.writeText(t).then(function(){cb(true);},function(){cb(fallbackCopy());});
   } else { cb(fallbackCopy()); }
 }
-function copyOut(){var t=ensure(); if(!t)return;
-  copyText(t,function(ok){
-    document.getElementById('msg').innerHTML = ok
-      ? '<div class="done">Copied. Paste it into an email to <b>'+ZEN_EMAIL+'</b>.</div>'
-      : '<div class="err">Your browser blocked the copy. Select the text in the box below by hand, or press <b>Download a copy</b> and email the file to '+ZEN_EMAIL+'.</div>';
-  });}
-
-/* One-button send. Uses ENDPOINT when configured; otherwise the email route. */
-function sendToZen(){
+function downloadOut(quiet){
   var t=ensure(); if(!t) return;
-  if(!ENDPOINT){ mailOut(); return; }
-  var box=document.getElementById('msg'), btn=document.getElementById('sendbtn');
-  btn.disabled=true; btn.textContent='Sending…';
-  fetch(ENDPOINT,{
-    method:'POST',
-    headers:{'Content-Type':'application/json','Accept':'application/json'},
-    body:JSON.stringify({_subject:subjectLine(),name:v('f_name'),email:v('f_email'),phone:v('f_phone'),role:roleText(),application:t})
-  }).then(function(r){
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    btn.textContent='Sent ✓';
-    box.innerHTML='<div class="done">Sent — thank you. Your application is with ZEN and we read every one properly. Carrie Smith, VP Leasing &amp; Revenue, will come back to you at '+(v('f_email')||'the address you gave')+'.</div>';
-    clearSaved();
-  }).catch(function(){
-    btn.disabled=false; btn.textContent='Finish & send to ZEN';
-    box.innerHTML='<div class="err">That did not go through — your connection may have dropped. <b>Nothing is lost.</b> Press <b>Email it instead</b>, or <b>Download a copy</b> and email the file to '+ZEN_EMAIL+'.</div>';
-  });
+  var a=document.createElement('a');
+  a.href='data:text/plain;charset=utf-8,'+encodeURIComponent(t);
+  a.download='ZEN-application-'+(v('f_name')||'applicant').replace(/[^a-z0-9]+/gi,'-')+'.txt';
+  document.body.appendChild(a); a.click(); a.remove();
+  if(!quiet) el('msg').innerHTML='<div class="done">Downloaded. Email that file to <b>'+ZEN_EMAIL+'</b>.</div>';
 }
-
-/* Email route: the FULL application goes via clipboard + downloaded file.
+/* The FULL application travels by clipboard + downloaded file.
    The mailto body stays short so it opens in every mail client. */
 function mailOut(){
-  var t=ensure(); if(!t)return;
-  var box=document.getElementById('msg');
+  var t=ensure(); if(!t) return;
+  var subj='Application — '+((el('f_role').selectedOptions[0]||{text:'role'}).text)+' — '+(v('f_name')||'applicant');
   var short=['My completed ZEN application is below.','',
     'Name:  '+v('f_name'),
     'Email: '+v('f_email'),
-    'Phone: '+v('f_phone'),
-    'Role:  '+roleText(),'',
+    'Phone: '+v('f_phone'),'',
     '----- PASTE APPLICATION HERE: press Ctrl+V, or Cmd+V on a Mac -----','',
-    '(If nothing pastes, attach the .txt file that just downloaded to your device.)'].join('\n');
+    '(If nothing pastes, attach the .txt file that just downloaded.)'].join('\n');
   copyText(t,function(ok){
     downloadOut(true);
-    box.innerHTML = ok
-      ? '<div class="done">Your full application is <b>on your clipboard</b> and a copy has downloaded. Your email app is opening now — press <b>Ctrl+V</b> (<b>Cmd+V</b> on a Mac) where it says PASTE APPLICATION HERE, then send.</div>'
-      : '<div class="done">A copy of your application has <b>downloaded</b> to your device. Your email app is opening now — <b>attach that .txt file</b> and send. If your mail app does not open, email it to '+ZEN_EMAIL+'.</div>';
-    window.location.href='mailto:'+ZEN_EMAIL+'?subject='+encodeURIComponent(subjectLine())+'&body='+encodeURIComponent(short);
+    el('msg').innerHTML = ok
+      ? '<div class="done">Your full application is <b>on your clipboard</b> and a copy has downloaded. Your mail app is opening — press <b>Ctrl+V</b> (<b>Cmd+V</b> on a Mac) where it says PASTE APPLICATION HERE, then send.</div>'
+      : '<div class="done">A copy of your application has <b>downloaded</b>. Your mail app is opening — <b>attach that .txt file</b> and send. If it does not open, email it to '+ZEN_EMAIL+'.</div>';
+    window.location.href='mailto:'+ZEN_EMAIL+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(short);
   });
 }
-function downloadOut(quiet){var t=ensure(); if(!t)return; var a=document.createElement('a');
-  a.href='data:text/plain;charset=utf-8,'+encodeURIComponent(t);
-  a.download='ZEN-application-'+(v('f_name')||'applicant').replace(/[^a-z0-9]+/gi,'-')+'.txt';
-  document.body.appendChild(a);a.click();document.body.removeChild(a);
-  if(!quiet) document.getElementById('msg').innerHTML='<div class="done">Downloaded. Email that file to <b>'+ZEN_EMAIL+'</b>.</div>';}
 
 /* Keep answers safe in the applicant's own browser until they send. */
-var SAVEKEY='zen-application-draft-v1';
+var SAVEKEY='zen-app8-draft-v1';
 function saveDraft(){
   try{
-    var d={track:TRACK,f:{},zones:grp('zones'),tools:grp('tools')};
+    var d={mode:MODE,f:{},zones:[]};
     Array.prototype.slice.call(document.querySelectorAll('input,select,textarea')).forEach(function(e){
       if(!e.id||e.id==='out') return;
       d.f[e.id]= e.type==='checkbox' ? e.checked : e.value;
@@ -628,24 +450,22 @@ function clearSaved(reload){ try{localStorage.removeItem(SAVEKEY);}catch(e){} if
 function restoreDraft(){
   try{
     var raw=localStorage.getItem(SAVEKEY); if(!raw) return;
-    var d=JSON.parse(raw); if(!d||!d.track) return;
-    pick(d.track,true);
+    var d=JSON.parse(raw); if(!d||!d.mode) return;
+    pick(d.mode);
     Object.keys(d.f||{}).forEach(function(id){
-      var e=document.getElementById(id); if(!e) return;
+      var e=el(id); if(!e) return;
       if(e.type==='checkbox') e.checked=!!d.f[id]; else e.value=d.f[id];
     });
-    ['zones','tools'].forEach(function(n){
-      (d[n]||[]).forEach(function(val){
-        Array.prototype.slice.call(document.querySelectorAll('[data-grp="'+n+'"]')).forEach(function(c){ if(c.value===val) c.checked=true; });
-      });
-    });
-    branch();
-    var b=document.getElementById('restored');
-    b.className='';
-    b.innerHTML='<div class="done" style="margin:20px 0 0">We brought back the answers you had already typed — carry on where you left off. <button type="button" class="reset" onclick="clearSaved(1)">Clear them and start fresh</button></div>';
+    branch(); prog();
+    var b=document.createElement('div');
+    b.innerHTML='<div class="done" style="margin:18px 0 0">We brought back the answers you had already typed — carry on where you left off. <button type="button" class="reset" onclick="clearSaved(1)">Clear them and start fresh</button></div>';
+    el('rest').insertBefore(b, el('rest').firstChild);
   }catch(e){}
 }
-document.addEventListener('input',saveDraft); document.addEventListener('change',saveDraft);
+document.addEventListener('input',saveDraft);
+document.addEventListener('change',saveDraft);
+
+prog();
 restoreDraft();
 </script>
 </body>
