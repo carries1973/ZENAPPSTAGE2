@@ -425,13 +425,29 @@ function mailOut(){
     'Phone: '+v('f_phone'),'',
     '----- PASTE APPLICATION HERE: press Ctrl+V, or Cmd+V on a Mac -----','',
     '(If nothing pastes, attach the .txt file that just downloaded.)'].join('\n');
-  copyText(t,function(ok){
-    downloadOut(true);
-    el('msg').innerHTML = ok
-      ? '<div class="done">Your full application is <b>on your clipboard</b> and a copy has downloaded. Your mail app is opening — press <b>Ctrl+V</b> (<b>Cmd+V</b> on a Mac) where it says PASTE APPLICATION HERE, then send.</div>'
-      : '<div class="done">A copy of your application has <b>downloaded</b>. Your mail app is opening — <b>attach that .txt file</b> and send. If it does not open, email it to '+ZEN_EMAIL+'.</div>';
-    window.location.href='mailto:'+ZEN_EMAIL+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(short);
-  });
+
+  /* ORDER MATTERS. The download and the mail app must NEVER wait on the
+     clipboard — navigator.clipboard.writeText can hang forever without
+     resolving or rejecting, and gating on it makes this button do nothing
+     at all. Clipboard is a bonus; the downloaded file is the guarantee. */
+
+  // 1. The file always lands, whatever else fails.
+  downloadOut(true);
+
+  // 2. Say what to do, assuming only the file.
+  el('msg').innerHTML='<div class="done">Your mail app is opening, and your full application has <b>downloaded as a .txt file</b> — attach it to the email and send. If it pasted to your clipboard, <b>Ctrl+V</b> (<b>Cmd+V</b> on a Mac) works too. Not opening? Email the file to <b>'+ZEN_EMAIL+'</b>.</div>';
+
+  // 3. Try the clipboard, but never wait on it.
+  try{
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(t).then(function(){
+        el('msg').innerHTML='<div class="done">Your full application is <b>on your clipboard</b> and a copy has downloaded. In the email that just opened, press <b>Ctrl+V</b> (<b>Cmd+V</b> on a Mac) where it says PASTE APPLICATION HERE, then send.</div>';
+      },function(){ fallbackCopy(); });
+    } else { fallbackCopy(); }
+  }catch(e){}
+
+  // 4. Hand off to the mail client.
+  window.location.href='mailto:'+ZEN_EMAIL+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(short);
 }
 
 /* Keep answers safe in the applicant's own browser until they send. */
